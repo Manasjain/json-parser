@@ -53,7 +53,6 @@ func parseJson(s []byte, phase Phase) map[string]interface{} {
 				key = append(key, s[index])
 				index++
 			}
-			// fmt.Printf("%v\n", string(key))
 			if index == len(s) || len(key) == 0 {
 				panic("invalid json at index")
 			}
